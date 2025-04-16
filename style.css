@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 25vh;
+    padding: 20px;
+  }
+  
+  /* Horizontal scroll wrapper for nav */
+  nav {
+    display: flex;
+    overflow-x: auto;
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 524px;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  nav::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  
+  nav a {
+    flex: 0 0 auto; /* Prevent shrinking */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  nav a:hover {
+    background: linear-gradient(45deg, #4f1919, #ff3333);
+  }
+  
+  /* Active link styling */
+  nav a.active {
+    background: linear-gradient(45deg, #ff3333, #4f1919);
+    color: #fff;
+  }
+  
